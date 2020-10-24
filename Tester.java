@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Tester{
   public static void main(String[] args) {
     int[][]  A  =  {  {  1,  0, 12, -1 },
@@ -6,5 +7,6 @@ public class Tester{
     int[]  B  =   {  -2, -4, -5 };
     System.out.println(ArrayOps.sum(B));
     System.out.println(ArrayOps.largest(B));
+    System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
   }
 }
