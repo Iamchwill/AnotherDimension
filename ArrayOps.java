@@ -30,4 +30,14 @@ public class ArrayOps {
     }
     return out;
   }
+
+  public static int sum(int[][] arr) {
+    int out = 0;
+    for (int start = 0; start < arr.length; start++) {
+      for (int i = 0; i < arr[start].length; i++) {
+        out += arr[start][i];
+      }
+    }
+    return out;
+  }
 }
