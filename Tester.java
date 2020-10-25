@@ -11,6 +11,8 @@ public class Tester{
     int[][] D = { { 1,  1,  1 },
                   { 2,  2,  2 },
                   { 3,  4,  3 } };
+    int[][]E = { { 2, 4, 2 },
+                 { 2, 2, 2 } };
     System.out.println(ArrayOps.sum(B));
     System.out.println(ArrayOps.largest(B));
     System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
@@ -19,5 +21,7 @@ public class Tester{
     System.out.println(Arrays.toString(ArrayOps.sumCols(C)));
     System.out.println(ArrayOps.isRowMagic(C));
     System.out.println(ArrayOps.isColMagic(D));
+    System.out.println(ArrayOps.isLocationMagic(E, 0, 1));
+    System.out.println(ArrayOps.isLocationMagic(E, 1, 1));
   }
 }
